@@ -1,0 +1,18 @@
+<div style="text-align: center;">
+  <h1>
+    Welcome to {{ title }}
+  </h1>
+  <h2>
+    Selamat Datang, {{ namaLengkap }}
+  </h2>
+  <input type="text" [(ngModel)]="namaLengkap">
+  <div>
+    <button (click)="rubahNama()"> Rubah Nama </button>
+  </div>
+
+  <div *ngIf="nyata">
+    <span>Disini Ada</span>
+  </div>
+  
+  <app-home></app-home>
+</div>
